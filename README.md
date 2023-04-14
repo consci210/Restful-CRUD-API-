@@ -1,6 +1,7 @@
 # Restful CRUD API
 
 - This repository contains a REST API with full CRUD (Create, Read, Update, Delete) operations that is built using MongoDB, Express, and Node.js.
+  ![Screenshot 2023-04-14 151103](https://user-images.githubusercontent.com/106769498/232043109-6d99be68-329d-4ed1-a7ae-d60b1892213f.png)
 
 ## How to Test 
 
