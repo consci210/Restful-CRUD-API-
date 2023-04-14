@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const Customer = require('./models/customerModel')
+const config = require('./config')
 
 
 const app = express()
@@ -12,7 +13,7 @@ app.use(express.urlencoded({extended : false }))
 // Connect to Database 
 mongoose.set("strictQuery" , false )
 mongoose
-.connect('mongodb+srv://admin:admin@restapi.a5y36u3.mongodb.net/Node-API?retryWrites=true&w=majority')
+.connect(config.mongoURI, { useNewUrlParser: true })
 .then(() => {
     app.listen(3000 , ()=>{
         console.log('App is running on port 3000')
